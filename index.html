@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prabhat Ranjan Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Prabhat Ranjan</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <img class="profile-img" src="https://scontent.fktm17-1.fna.fbcdn.net/v/t39.30808-6/488823869_3970941583223097_3499739899377575399_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=3NcEhrzlY3kQ7kNvwEN5dbO&_nc_oc=AdnFFHpLj6LsQ4TsFj4nV2jF8ZdLmacmBJHhJxGQwNdzUtwXsp5rreXERJuutU3MJOxMMrlJz4DJWkmzl0hjmp2p&_nc_zt=23&_nc_ht=scontent.fktm17-1.fna&_nc_gid=dZGd_p-kHoHMch1b0fHMMQ&oh=00_AfHEYo4183RDQf923DCuJAavVQRMMjIkY-a50tNM0jlpDQ&oe=6819153F" alt="Profile Picture" />
+    <h2>Welcome to My Portfolio</h2>
+    <p>Geomatics Engineering Student | Kathmandu University</p>
+    <a class="btn" href="#contact">Contact Me</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am Prabhat Ranjan, a passionate final-year Geomatics Engineering student at Kathmandu University. I have a deep interest in geospatial technologies and web development. My expertise spans both the technical and practical sides of surveying, mapping, GIS, and web technologies. I am highly motivated to contribute to meaningful geospatial projects and continuously learn new skills.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>GIS Software</li>
+      <li>QGIS</li>
+      <li>ENVI Software</li>
+      <li>Field Survey</li>
+      <li>GNSS Data Collection & Processing</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Dhulikhel Thematic Map</h3>
+      <p>A thematic map project highlighting the land use and topography of Dhulikhel Municipality using QGIS and remote sensing data.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li>Bachelor in Geomatics Engineering - Kathmandu University</li>
+      <li>+2 Science - Trinity International College, Kathmandu</li>
+      <li>SEE - Jaycees Secondary English Boarding School</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ranjanprabhat854@gmail.com">ranjanprabhat854@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/prabhat-ranjan-309796329" target="_blank">prabhat-ranjan</a></p>
+    <p>GitHub: <a href="https://github.com/ranjanprabhat131" target="_blank">ranjanprabhat131</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Prabhat Ranjan. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Optional scroll animation
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('fade-in');
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
